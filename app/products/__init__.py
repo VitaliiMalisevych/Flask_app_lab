@@ -1,10 +1,10 @@
+import os
 from flask import Blueprint
+from tinydb import TinyDB
 
-product_bp = Blueprint(
-    'products',
-    __name__,
-    url_prefix='/products',
-    template_folder='templates'
-)
+products_bp = Blueprint('products', __name__, template_folder='templates')
 
-from . import views
+db_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'products.json')
+db = TinyDB(db_path, encoding='utf-8')
+
+from app.products import views
