@@ -1,0 +1,98 @@
+2026-11-04 15:35:04,282 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-11-04 15:35:04,283 INFO: [33mPress CTRL+C to quit[0m
+2026-11-04 15:35:04,283 INFO:  * Restarting with stat
+2026-11-04 15:35:04,365 WARNING:  * Debugger is active!
+2026-11-04 15:35:04,372 INFO:  * Debugger PIN: 141-305-371
+2026-11-04 15:35:16,906 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-11-04 15:35:16,906 INFO: [33mPress CTRL+C to quit[0m
+2026-11-04 15:35:16,906 INFO:  * Restarting with stat
+2026-11-04 15:35:16,989 WARNING:  * Debugger is active!
+2026-11-04 15:35:16,993 INFO:  * Debugger PIN: 141-305-371
+2026-11-04 15:35:44,582 INFO: 127.0.0.1 - - [04/Nov/2026 15:35:44] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:35:44,592 INFO: 127.0.0.1 - - [04/Nov/2026 15:35:44] "GET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-04 15:35:44,592 INFO: 127.0.0.1 - - [04/Nov/2026 15:35:44] "GET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-04 15:35:44,597 INFO: 127.0.0.1 - - [04/Nov/2026 15:35:44] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=uHSOs96ddao1KK3GGCds HTTP/1.1" 200 -
+2026-11-04 15:35:44,626 INFO: 127.0.0.1 - - [04/Nov/2026 15:35:44] "GET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-04 15:37:08,908 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:08] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:37:08,918 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:08] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:37:08,918 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:08] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:37:08,927 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:08] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=uHSOs96ddao1KK3GGCds HTTP/1.1[0m" 304 -
+2026-11-04 15:37:08,942 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:08] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:37:09,606 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:09] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:37:09,617 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:09] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:37:09,617 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:09] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:37:09,622 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:09] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=uHSOs96ddao1KK3GGCds HTTP/1.1[0m" 304 -
+2026-11-04 15:37:09,637 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:09] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:37:14,721 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-11-04 15:37:14,721 INFO: [33mPress CTRL+C to quit[0m
+2026-11-04 15:37:14,722 INFO:  * Restarting with stat
+2026-11-04 15:37:14,804 WARNING:  * Debugger is active!
+2026-11-04 15:37:14,809 INFO:  * Debugger PIN: 141-305-371
+2026-11-04 15:37:21,991 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:21] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:37:22,004 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,004 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,012 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=RQjSMoh4WbUgsGlTmcrW HTTP/1.1" 200 -
+2026-11-04 15:37:22,027 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,968 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:37:22,976 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,976 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,980 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=RQjSMoh4WbUgsGlTmcrW HTTP/1.1[0m" 304 -
+2026-11-04 15:37:22,988 INFO: 127.0.0.1 - - [04/Nov/2026 15:37:22] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:38:02,424 INFO: 127.0.0.1 - - [04/Nov/2026 15:38:02] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:38:02,434 INFO: 127.0.0.1 - - [04/Nov/2026 15:38:02] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:38:02,434 INFO: 127.0.0.1 - - [04/Nov/2026 15:38:02] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:38:02,439 INFO: 127.0.0.1 - - [04/Nov/2026 15:38:02] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=RQjSMoh4WbUgsGlTmcrW HTTP/1.1[0m" 304 -
+2026-11-04 15:39:03,480 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:03] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:39:03,484 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:03] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:39:03,485 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:03] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:39:03,492 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:03] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=RQjSMoh4WbUgsGlTmcrW HTTP/1.1[0m" 304 -
+2026-11-04 15:39:03,502 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:03] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:39:04,128 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:04] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:39:04,136 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:04] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:39:04,136 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:04] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:39:04,141 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:04] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=RQjSMoh4WbUgsGlTmcrW HTTP/1.1[0m" 304 -
+2026-11-04 15:39:04,148 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:04] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:39:10,867 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-11-04 15:39:10,867 INFO: [33mPress CTRL+C to quit[0m
+2026-11-04 15:39:10,867 INFO:  * Restarting with stat
+2026-11-04 15:39:10,952 WARNING:  * Debugger is active!
+2026-11-04 15:39:10,957 INFO:  * Debugger PIN: 141-305-371
+2026-11-04 15:39:13,442 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:13] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:39:13,452 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:13] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:39:13,452 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:13] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:39:13,459 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:13] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=78Lqq6mOcz9vbOFVrFey HTTP/1.1" 200 -
+2026-11-04 15:39:13,477 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:13] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:39:14,008 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:14] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:39:14,018 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:14] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:39:14,018 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:14] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:39:14,022 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:14] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=78Lqq6mOcz9vbOFVrFey HTTP/1.1[0m" 304 -
+2026-11-04 15:39:14,038 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:14] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:39:41,382 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:41] "GET /contact HTTP/1.1" 200 -
+2026-11-04 15:39:41,392 INFO: 127.0.0.1 - - [04/Nov/2026 15:39:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-11-04 15:40:21,771 INFO: 127.0.0.1 - - [04/Nov/2026 15:40:21] "POST /contact HTTP/1.1" 200 -
+2026-11-04 15:40:21,780 INFO: 127.0.0.1 - - [04/Nov/2026 15:40:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-11-04 15:43:07,253 INFO: 127.0.0.1 - - [04/Nov/2026 15:43:07] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+2026-11-04 15:43:07,262 INFO: 127.0.0.1 - - [04/Nov/2026 15:43:07] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-11-04 15:43:07,262 INFO: 127.0.0.1 - - [04/Nov/2026 15:43:07] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-11-04 15:43:07,266 INFO: 127.0.0.1 - - [04/Nov/2026 15:43:07] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=78Lqq6mOcz9vbOFVrFey HTTP/1.1[0m" 304 -
+2026-11-04 15:43:07,279 INFO: 127.0.0.1 - - [04/Nov/2026 15:43:07] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-11-04 15:43:55,965 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-11-04 15:43:55,965 INFO: [33mPress CTRL+C to quit[0m
+2026-11-04 15:43:55,966 INFO:  * Restarting with stat
+2026-11-04 15:43:56,052 WARNING:  * Debugger is active!
+2026-11-04 15:43:56,057 INFO:  * Debugger PIN: 141-305-371
+2026-11-04 15:44:00,627 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:00] "POST /contact HTTP/1.1" 200 -
+2026-11-04 15:44:00,642 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-11-04 15:44:03,819 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:03] "POST /contact HTTP/1.1" 200 -
+2026-11-04 15:44:03,829 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-11-04 15:44:06,998 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:06] "POST /contact HTTP/1.1" 200 -
+2026-11-04 15:44:07,005 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-11-04 15:44:17,181 INFO: Name: Oleg, Email: vitalii.malisevych.24@pnu.edu.ua, Phone: +380077123445, Subject: support, Message: Test
+2026-11-04 15:44:17,183 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:17] "[32mPOST /contact HTTP/1.1[0m" 302 -
+2026-11-04 15:44:17,189 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:17] "GET /contact HTTP/1.1" 200 -
+2026-11-04 15:44:17,195 INFO: 127.0.0.1 - - [04/Nov/2026 15:44:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
