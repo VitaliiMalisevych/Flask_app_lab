@@ -1,0 +1,42 @@
+
+{% extends "base.html" %}
+
+{% block title %}Видалення поста — WebPython{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <h3 class="mb-0">Підтвердження видалення</h3>
+            </div>
+
+            <div class="card-body">
+                <p class="fs-5">
+                    Ви дійсно хочете видалити пост
+                    <strong>«{{ post.title }}»</strong>?
+                </p>
+
+                <p class="text-muted">
+                    Цю дію неможливо скасувати.
+                </p>
+
+                <form method="POST"
+                      action="{{ url_for('post.delete_post', id=post.id) }}">
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-danger">
+                            Так, видалити
+                        </button>
+
+                        <a href="{{ url_for('post.detail_post', id=post.id) }}"
+                           class="btn btn-outline-secondary">
+                            Скасувати
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

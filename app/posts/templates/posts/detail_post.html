@@ -1,0 +1,61 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} — WebPython{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+
+                <h1 class="mb-3">{{ post.title }}</h1>
+
+                <div class="mb-3">
+                    <span class="badge bg-primary">
+                        {{ post.category }}
+                    </span>
+
+                    {% if post.is_active %}
+                        <span class="badge bg-success">Активний</span>
+                    {% else %}
+                        <span class="badge bg-secondary">Неактивний</span>
+                    {% endif %}
+                </div>
+
+                <p class="text-muted">
+                    Автор: {{ post.author }}
+                    |
+                    Дата: {{ post.posted.strftime('%d.%m.%Y %H:%M') }}
+                </p>
+
+                <hr>
+
+                <p class="fs-5" style="white-space: pre-line;">
+                    {{ post.content }}
+                </p>
+
+                <hr>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="{{ url_for('post.all_posts') }}"
+                       class="btn btn-outline-secondary">
+                        До списку
+                    </a>
+
+                    <a href="{{ url_for('post.update_post', id=post.id) }}"
+                       class="btn btn-primary">
+                        Редагувати
+                    </a>
+
+                    <a href="{{ url_for('post.delete_post', id=post.id) }}"
+                       class="btn btn-danger">
+                        Видалити
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

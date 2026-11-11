@@ -1,12 +1,23 @@
-# Python / Virtual environment
-.venv/
-venv/
-ENV/
+# Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.venv/
+venv/
 
-# PyCharm settings
-.idea/
-
-# Environment variables
+# Environment
 .env
+.env.*
+!.env.example
+
+# Local database
+instance/
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.DS_Store
