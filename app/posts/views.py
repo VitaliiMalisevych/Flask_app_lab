@@ -81,9 +81,7 @@ def update_post(id):
         form.publish_date.data = post.posted
 
     if form.validate_on_submit():
-        post.title = form.title.data
-        post.content = form.content.data
-        post.category = form.category.data
+        form.populate_obj(post)
         post.is_active = form.enabled.data
         post.posted = form.publish_date.data
 
