@@ -24,10 +24,24 @@
                 </div>
 
                 <p class="text-muted">
-                    Автор: {{ post.author }}
+                    Автор: {{ post.author.username if post.author else 'Не вказано' }}
                     |
                     Дата: {{ post.posted.strftime('%d.%m.%Y %H:%M') }}
                 </p>
+
+                <div class="mb-3">
+                    <strong>Теги:</strong>
+
+                    {% for tag in post.tags %}
+                        <span class="badge bg-primary me-1">
+                            {{ tag.name }}
+                        </span>
+                    {% else %}
+                        <span class="text-muted">
+                            Немає тегів
+                        </span>
+                    {% endfor %}
+                </div>
 
                 <hr>
 

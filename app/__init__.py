@@ -23,6 +23,7 @@ def create_app(config_name='development'):
     from app.products import products_bp
     from app.posts import post_bp
     from app.posts import models
+    from app.users import models as user_models
 
     app.register_blueprint(main_bp)
     app.register_blueprint(user_bp, url_prefix='/users')

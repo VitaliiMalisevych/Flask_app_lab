@@ -8,6 +8,7 @@ from wtforms import (
     BooleanField,
     DateTimeLocalField,
     SelectField,
+    SelectMultipleField,
     SubmitField
 )
 from wtforms.validators import DataRequired, Length
@@ -52,6 +53,17 @@ class PostForm(FlaskForm):
         ],
         default='other',
         validators=[DataRequired()]
+    )
+
+    author_id = SelectField(
+        'Автор',
+        coerce=int,
+        validators=[DataRequired()]
+    )
+
+    tags = SelectMultipleField(
+        'Теги',
+        coerce=int
     )
 
     submit = SubmitField('Зберегти')

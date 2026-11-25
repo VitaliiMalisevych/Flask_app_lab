@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% block title %}{{ title }} — WebPython{% endblock %}
@@ -19,7 +20,18 @@
                     {{ render_field(form.title) }}
                     {{ render_field(form.content) }}
                     {{ render_field(form.category) }}
+                    {{ render_field(form.author_id) }}
+
+                    <div class="mb-3">
+                        {{ form.tags.label(class="form-label") }}
+                        {{ form.tags(class="form-select", multiple=True, size=4) }}
+                        <small class="text-muted">
+                            Утримуй Cmd для вибору кількох тегів.
+                        </small>
+                    </div>
+
                     {{ render_field(form.publish_date) }}
+
                     <div class="form-check mb-3">
                         {{ form.enabled(class="form-check-input") }}
                         {{ form.enabled.label(class="form-check-label") }}

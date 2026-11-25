@@ -1,13 +1,38 @@
 
 from datetime import datetime, timezone
-from sqlalchemy import String, Text, DateTime, Enum, Boolean
-from sqlalchemy.orm import Mapped, mapped_column
+
+from sqlalchemy import (
+    String,
+    Text,
+    DateTime,
+    Enum,
+    Boolean,
+    ForeignKey
+)
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app import db
 
 
+post_tags = db.Table(
+    "post_tags",
+    db.Column(
+        "post_id",
+        db.Integer,
+        db.ForeignKey("posts.id"),
+        primary_key=True
+    ),
+    db.Column(
+        "tag_id",
+        db.Integer,
+        db.ForeignKey("tags.id"),
+        primary_key=True
+    )
+)
+
+
 class Post(db.Model):
-    __tablename__ = 'posts'
+    __tablename__ = "posts"
 
     id: Mapped[int] = mapped_column(
         primary_key=True
@@ -30,29 +55,61 @@ class Post(db.Model):
 
     category: Mapped[str] = mapped_column(
         Enum(
-            'news',
-            'publication',
-            'tech',
-            'other',
-            name='post_category'
+            "news",
+            "publication",
+            "tech",
+            "other",
+            name="post_category"
         ),
-        default='other',
+        default="other",
         nullable=False
     )
 
     is_active: Mapped[bool] = mapped_column(
         Boolean,
         default=True,
-        server_default='1',
+        server_default="1",
         nullable=False
     )
 
-    author: Mapped[str] = mapped_column(
-        String(20),
-        default='Anonymous',
-        server_default='Anonymous',
-        nullable=False
+    author_id: Mapped[int | None] = mapped_column(
+        ForeignKey("users.id"),
+        nullable=True
+    )
+
+    author: Mapped["User | None"] = relationship(
+        "User",
+        back_populates="posts"
+    )
+
+    tags: Mapped[list["Tag"]] = relationship(
+        "Tag",
+        secondary=post_tags,
+        back_populates="posts"
     )
 
     def __repr__(self):
-        return f'<Post {self.id}: {self.title}>'
+        return f"<Post {self.id}: {self.title}>"
+
+
+class Tag(db.Model):
+    __tablename__ = "tags"
+
+    id: Mapped[int] = mapped_column(
+        primary_key=True
+    )
+
+    name: Mapped[str] = mapped_column(
+        String(100),
+        unique=True,
+        nullable=False
+    )
+
+    posts: Mapped[list["Post"]] = relationship(
+        "Post",
+        secondary=post_tags,
+        back_populates="tags"
+    )
+
+    def __repr__(self):
+        return f"<Tag {self.id}: {self.name}>"
